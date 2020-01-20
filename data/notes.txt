@@ -1,0 +1,6 @@
+"Alice's Adventures in Wonderland" as well as "Pride and Prejudice"
+were download from https://www.gutenberg.org/.
+
+corpus-20090418 was downloaded from here:
+
+https://ir.shef.ac.uk/cloughie/resources/plagiarism_corpus.html

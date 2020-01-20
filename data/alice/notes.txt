@@ -1,0 +1,23 @@
+The book was downloaded from www.gutenberg.org and renamed to content.txt.
+
+> wget https://www.gutenberg.org/files/11/11-0.txt
+
+I was then cut in 10 parts.
+
+> split -l 333 content.txt parts/content-
+
+A .txt extension was added to each part.
+
+> cd parts
+> for f in content*; do mv $f ${f}.txt; done
+
+Documents were created by contacting parts together.
+
+> cat content-aa.txt content-ab.txt content-ac.txt content-ad.txt content-ae.txt > ../data-2/content-a.txt
+> cat content-ag.txt content-ah.txt content-ai.txt content-aj.txt content-ak.txt > ../data-2/content-b.txt
+> cat content-aa.txt content-ab.txt content-ac.txt content-ah.txt content-ae.txt > ../data-2/content-c.txt
+> cat content-aa.txt content-ah.txt content-ai.txt content-aj.txt content-ak.txt > ../data-2/content-d.txt
+> cat content-aa.txt content-ai.txt content-ac.txt content-aj.txt content-ae.txt > ../data-2/content-e.txt
+> cat content-ah.txt content-ag.txt content-ac.txt content-aa.txt content-ae.txt > ../data-2/content-f.txt
+> cat content-ad.txt content-ae.txt content-aa.txt content-ab.txt content-ac.txt > ../data-2/content-g.txt
+
